@@ -1,3 +1,147 @@
 body {
-    background-color: azure;
+    margin:0;
+
+}
+
+@media only screen and (max-width:450px){
+    .works {
+        display:grid;
+        grid-template-columns:repeat( auto-fill, mixmax(250px,100vw) );
+        gap:30px;
+    }
+    .card
+    {width:70vw;}
+    
+    .contact{
+        margin
+    }
+
+}
+
+.wrapper {
+    height: 200px;
+    min-width: 100vw;
+    max-width: 100vw;
+    width: 100vw;
+    background-color: white;
+    position:absolute;
+    top:0;
+    z-index: 1;
+  }
+  
+  .bg {
+    min-height: 300px;
+    min-width: 100vw;
+    background-color:rgba(22, 158, 221, 0.952);
+    clip-path: polygon(0 0, 140% 0, 0 100%);
+  }
+
+
+.header{
+  height:400px;
+}
+.avatar {
+    width:min(40vw,400px);
+    height:auto;
+    border-radius:30px;
+    padding:15px;
+    position:absolute;
+    z-index:2;
+}
+
+.name {
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position:absolute;
+    z-index: 3;
+    left:min(50vw,500px);
+    white-space:no-wrap;
+}
+
+.board {
+    position:absolute;
+    z-index:4;
+    background:rgba(58, 63, 57, 0.979);
+    border-radius: 10px;
+    padding:10px;
+    top:150px;
+    width:50vw;
+    max-width:400px;
+    left:min(45vw,500px);
+    
+}
+
+.board{
+    color:white;
+}
+
+
+
+.collections {
+    margin-top:25px;
+    padding:20px;
+    
+}
+
+.work-header{
+    font-style:italic;
+}
+
+.collections h3{
+    font-size:30px;
+    font-style:italic;
+}
+
+.works {
+    display:grid;
+    grid-template-columns:repeat( auto-fill, minmax(410px,0.9fr) );
+    gap:30px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;;
+    background-color:ghostwhite;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work-img {
+    width:60%;
+    height:auto;    
+    max-height:380px;
+}
+
+.links {
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+}
+.link-container{
+    background-color:rgba(128, 128, 128, 0.842);
+    
+    padding:4px;
+    border:2px solid black;
+    border-radius:10px;
+}
+
+.work-link{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.link-container:hover{
+    transform:scale(1.2);
+    background-color:rgba(28, 199, 28, 0.856)
+}
+
+
+.contact {
+    width:100vw;
+    padding:10px;
+    margin:0;
+    background-color:rgba(22, 158, 221, 0.952);
+    color:white;
 }
